@@ -1,0 +1,6 @@
+@mixin button_animation(){   font-size: 3rem;
+    transition: all 0.2s ease-out;
+    &:active{
+        transform: scale(0.9);
+    }
+}
