@@ -1,12 +1,11 @@
 .page_landing{
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color:$background_landing;
     font-family: $font_family;
+    padding: 30px;
        
 }
 .logo_landing{
@@ -51,15 +50,15 @@
 }
 .button_landing{
     @include button_animation();
-    font-size: 28px;
+    font-size: 2rem;
     color: white;
     background-color: $title_color;
     border-style: none;
-    height: 70px;
-    width: 250px;
-    box-sizing: border-box;
+    height: 50px;
+    width: 200px;
     border-radius: 15px;
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
        
 }

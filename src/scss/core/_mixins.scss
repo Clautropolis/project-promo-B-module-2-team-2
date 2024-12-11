@@ -1,6 +1,9 @@
-@mixin button_animation(){   font-size: 3rem;
+@mixin button_animation(){   
+    font-size: 3rem;
     transition: all 0.5s ease-out;
     &:active{
         transform: scale(0.9);
+        background-color: $background_foot-head;
+         
     }
 }
