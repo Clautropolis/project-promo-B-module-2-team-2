@@ -1,1 +1,19 @@
-
+.footer {
+    background-color: $background_foot-head;
+    font-family: $font_family;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 25px;
+    @media (min-width: 768px) {
+        font-size: 1.6rem;
+        padding: 5px 25px;
+    }
+    &__logo {
+        width: 55px;
+        @media (min-width: 768px) {
+            width: 75px;
+        }
+    }
+}
