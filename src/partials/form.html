@@ -1,11 +1,40 @@
 <form action="" class="form">
     <section class="form__design">
-        <h2>DISEÑA</h2>
-
-        <div>
-            <label for="">COLORES</label>
-            <input type="radio">
+        <div class="form__design--title">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h2>DISEÑA</h2>
         </div>
+
+        <fieldset class="form__design--options">
+                
+            <legend>Elige una categoría</legend>
+
+            <div class="options">
+                <label for="categoria1">
+                <input
+                    id="categoria1"
+                    type="radio"
+                    value="Gastronomía"
+                    name="categorias"/>
+                Gastronomía</label>
+            
+                <label for="categoria2">
+                <input
+                    id="categoria2"
+                    type="radio"
+                    value="Musica"
+                    name="categorias"/>
+                Música</label>
+
+                <label for="categoria3">
+                <input
+                    id="categoria3"
+                    type="radio"
+                    value="Cine"
+                    name="categorias"/>
+                Cine</label>
+            </div>
+        </fieldset>
 
     </section>
         
@@ -33,6 +62,7 @@
     </section>
 
     <section class="form__share">
+        <i class="fa-solid fa-share"></i>
         <h2>COMPARTE</h2>
 
         <button>Crear entrada</button>
