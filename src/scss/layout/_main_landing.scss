@@ -42,11 +42,10 @@
      
 }
 .icon_landing{
-    height: 50px;
+    size: 50px;
     padding: 5px;
     @include button_animation();
-    border-radius: 2px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    color: $background_foot-head;
 }
 .button_landing{
     @include button_animation();
