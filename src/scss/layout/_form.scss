@@ -99,6 +99,7 @@
         padding: 10px;
         border-radius: 5px;
         align-self: center;
+        @include form_animation();
         box-shadow: 2px 2px 4px 1px rgba(20, 8, 14, 0.5);
         & i {
             padding: 5px;
