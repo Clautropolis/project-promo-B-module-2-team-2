@@ -1,3 +1,30 @@
+.form__fillin{
+    background-color: $background_landing;
+    display: flex;
+    flex-direction: column;
+    font-family: $font_family;
+    padding: 10px;
+    gap: 10px;
+    color: $text_color;
+    &--title{
+    
+    }
+    &--input{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+}
+.inputs{
+    width: 200px;
+    /*border: 1px solid purple;*/
+}
+.inputimg{
+    color: $text_color;
+    background-color:$icons_color;
+    border: solid $icons_color;
+}
 /*DESIGN*/
 
 .form__design {
