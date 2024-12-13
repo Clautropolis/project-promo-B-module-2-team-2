@@ -52,11 +52,11 @@
 .icon_landing{
     size: 50px;
     padding: 5px;
-    @include button_animation();
+    @include form_animation();
     color: $icons_color;
 }
 .button_landing{
-    @include button_animation();
+    @include form_animation();
     font-size: 2rem;
     color: white;
     background-color: $title_color;
