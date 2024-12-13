@@ -1,11 +1,40 @@
 <form action="" class="form">
     <section class="form__design">
-        <h2>DISEÑA</h2>
-
-        <div>
-            <label for="">COLORES</label>
-            <input type="radio">
+        <div class="form__design--title">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h2>DISEÑA</h2>
         </div>
+
+        <fieldset class="form__design--options">
+                
+            <legend>Elige una categoría</legend>
+
+            <div class="options">
+                <label for="categoria1">
+                <input
+                    id="categoria1"
+                    type="radio"
+                    value="Gastronomía"
+                    name="categorias"/>
+                Gastronomía</label>
+            
+                <label for="categoria2">
+                <input
+                    id="categoria2"
+                    type="radio"
+                    value="Musica"
+                    name="categorias"/>
+                Música</label>
+
+                <label for="categoria3">
+                <input
+                    id="categoria3"
+                    type="radio"
+                    value="Cine"
+                    name="categorias"/>
+                Cine</label>
+            </div>
+        </fieldset>
 
     </section>
         
@@ -51,9 +80,21 @@
     </section>
 
     <section class="form__share">
-        <h2>COMPARTE</h2>
+        <div class="form__share--title">
+            <i class="fa-solid fa-share"></i>
+            <h2>COMPARTE</h2>
+        </div>
 
-        <button>Crear entrada</button>
+        <a href="#" class="form__share--button">
+            <i class="fa-solid fa-ticket"></i>
+            CREAR ENTRADA</a>
+
+        <div class="form__share--link">
+            <h5>La entrada ha sido creada:</h5>
+            <p>url de la entrada que no se muy bien como se hace.</p>
+            <a href="#">Compartir en Twitter</a>
+
+        </div>
 
 
     </section>

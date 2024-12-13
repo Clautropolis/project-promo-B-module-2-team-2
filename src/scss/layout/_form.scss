@@ -25,3 +25,144 @@
     background-color:$icons_color;
     border: solid $icons_color;
 }
+/*DESIGN*/
+
+.form__design {
+    background-color: $background_landing;
+    color: $title_color;
+    font-family: $font_family;
+    width: 100vw;
+    padding: 10px 0 15px 10px;
+    border-bottom: 1px solid $title_color;
+
+    @media (min-width: 768px) {
+        width: 50vw;            
+    }
+
+    
+    & h2 {
+        font-weight: bold;
+        font-size: 1.7rem;
+        display: inline-block;
+    }
+
+    & i {display: inline-block;
+        font-size: 15px;
+        padding: 5px;
+        color: $icons_color;
+    }
+}
+
+.form__design--options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; 
+    margin-top: 10px;
+    & legend {
+        font-size: 1.2rem;
+        grid-column: 1/2;
+    }
+}
+
+.options {
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    & label {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*SHARE*/
+
+.form__share {
+    background-color: $background_landing;
+    color: $title_color;
+    width: 100vw;
+    font-family: $font_family;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 10px 0 10px 5px;
+    border-bottom: 1px solid $title_color;
+
+        @media (min-width: 768px) {
+            width: 50vw;            
+        }
+
+    &--title {
+
+        & h2 {
+            font-weight: bold;
+            font-size: 1.7rem;
+            display: inline-block;
+        }
+    
+        & i {display: inline-block;
+            font-size: 15px;
+            padding: 5px;
+            color: $icons_color;
+            margin-bottom: 5px;
+        }    
+    }
+    
+    &--button {
+        all: unset;
+        background-color: $icons_color;
+        color: $text_color;
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-top: 30px;
+        padding: 10px;
+        border-radius: 5px;
+        align-self: center;
+        @include form_animation();
+        box-shadow: 2px 2px 4px 1px rgba(20, 8, 14, 0.5);
+        & i {
+            padding: 5px;
+        }
+    }
+    
+    &--link {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
+        gap: 5px;
+        margin-top: 30px;
+       & h5 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $background_foot-head;
+       }
+       & p {
+        color: $url_color;
+        font-size: 1.1rem;
+       }
+       & a {
+        align-self: center;
+        background-color: #00A0F5;
+        color: white;
+        font-size: 1.2rem;
+        padding: 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 10px;
+       }
+    }
+}
+
+
+.hidden {
+    display: none;
+}
