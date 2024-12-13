@@ -1,9 +1,81 @@
-.ticket-section {
+.ticket__section {
     padding: 30px 50px;
-    background-color: white;
-    background-size: cover 50%;
+    background-color:$background_landing;
+    font-family: $font_family;
+    $background_landing: #F2F2C9;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (min-width: 768px) {
+        border-radius: 10px;
+    }
 }
+
+.button__ticket {
+    display: flex;
+    margin: 30px;
+    margin-left: 0;
+    &--button {
+        color: $background_foot-head;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border-radius: 20px;
+        padding: 9px 10px;
+        border: 2px solid $background_foot-head;
+        @media screen and (min-width: 768px) {
+            margin-top: 10px;
+        }
+    }
+}
+
+.ticket {
+    margin-bottom: 20px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .ticket__div {
+        margin-top: 20px;
+        &--title {
+            padding-bottom: 7px;
+            color: $title_color;
+            font-family: $font_family;
+            font-size: 30px;
+            font-weight: 800;
+        }
+        &--subtitle {
+            font-family:$font_family; 
+        }
+    }
+    
+    
+.section__image {
+    margin-top: 20px;
+    .img.section__image {
+    width: 50vh;
+    }
+}
+    
+.icons {
+    color: $icons_color;
+    display: flex;
+    gap: 10px;
+    margin: 10px 30px;
+    .icon {
+        height: 37px;
+        width: 37px;
+        border-radius: 100%;
+        border-width: 2.5px;
+        border-style: solid;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+      }
+    }
+}
+
 
