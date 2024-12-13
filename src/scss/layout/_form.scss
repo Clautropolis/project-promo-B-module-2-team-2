@@ -5,26 +5,35 @@
     font-family: $font_family;
     padding: 10px;
     gap: 10px;
-    color: $text_color;
+    color: $title_color;
     &--title{
+        & h2 {
+            font-weight: bold;
+            font-size: 1.7rem;
+            display: inline-block;
+        }
     
+        & i {display: inline-block;
+            font-size: 15px;
+            padding: 5px;
+            color: $icons_color;
+        }
     }
     &--input{
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.2rem;
     }
 }
+
 .inputs{
-    width: 200px;
-    /*border: 1px solid purple;*/
+    width: 325px;
+    border: 1px solid $icons_color;
 }
-.inputimg{
-    color: $text_color;
-    background-color:$icons_color;
-    border: solid $icons_color;
-}
+
 /*DESIGN*/
 
 .form__design {
