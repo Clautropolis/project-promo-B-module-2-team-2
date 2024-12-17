@@ -34,18 +34,22 @@
     border: 1px solid $icons_color;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> c507e4434e419c157ff516619aca9a000f2b10e0
 /*DESIGN*/
 
 .form__design {
     background-color: $background_landing;
     color: $title_color;
     font-family: $font_family;
-    width: 100vw;
     padding: 10px 0 15px 10px;
     border-bottom: 1px solid $title_color;
 
     @media (min-width: 768px) {
-        width: 50vw;            
+        width: 100vw;            
     }
 
     
@@ -63,18 +67,19 @@
 }
 
 .form__design--options{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
     margin-top: 10px;
-    & legend {
-        font-size: 1.2rem;
-        grid-column: 1/2;
-    }
 }
 
+.options__title {
+    font-size: 1.2rem;
+    align-self: start;
+    }
+
 .options {
-    grid-column: 3/4;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -84,20 +89,11 @@
     }
 }
 
-
-
-
-
-
-
-
-
 /*SHARE*/
 
 .form__share {
     background-color: $background_landing;
     color: $title_color;
-    width: 100vw;
     font-family: $font_family;
     display: flex;
     align-items: baseline;
@@ -106,7 +102,7 @@
     border-bottom: 1px solid $title_color;
 
         @media (min-width: 768px) {
-            width: 50vw;            
+            width: 100vw;            
         }
 
     &--title {
