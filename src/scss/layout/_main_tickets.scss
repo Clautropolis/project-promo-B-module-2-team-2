@@ -1,13 +1,11 @@
 .main__tickets {
     background-color: $background_landing;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-
+    
     @media (min-width: 768px) {
-        width: 100vw;
-        grid-template-columns: 50vw 50vw;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
-    }
+        
 
+    }
 }

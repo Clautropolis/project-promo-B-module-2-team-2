@@ -34,7 +34,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 45px;
+    gap: 40px;
     border: 2px solid $icons_color;
     border-radius: 3px;
     margin-top: 25px;
@@ -44,6 +44,7 @@
     padding: 5px;
     @include form_animation();
     color: $icons_color;
+    font-size: 3rem;
 }
 .button_landing{
      @include form_animation();
