@@ -11,6 +11,20 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
+        @media (min-width: 580px) {
+            width: 400px;
+            height: 200px;
+        }
+
+        @media (min-width: 768px) {
+            width: 360px;
+            height: 200px;
+        }
+        @media (min-width: 1024px) {
+            width: 680px;
+            height: 300px;
+        }
+
     &__title {
         font-size: 2rem;
         font-weight: bold;
