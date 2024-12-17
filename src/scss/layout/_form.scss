@@ -1,16 +1,25 @@
+.form {
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .form__fillin{
     background-color: $background_landing;
     display: flex;
     flex-direction: column;
     font-family: $font_family;
     padding: 10px;
+    padding-bottom: 20px;
     gap: 10px;
     color: $title_color;
+    border-bottom: 1px solid $title_color;
     &--title{
         & h2 {
             font-weight: bold;
             font-size: 1.7rem;
             display: inline-block;
+        
         }
     
         & i {display: inline-block;
@@ -26,30 +35,33 @@
         align-items: center;
         gap: 10px;
         font-size: 1.2rem;
+       
     }
 }
 
-.inputs{
-    width: 325px;
+.inputs {
+    width: 250px;
     border: 1px solid $icons_color;
 }
 
-<<<<<<< HEAD
-=======
+.labels {
+    align-self: center;
+    color: $text_color;
+    padding-left: 20px;
+}
 
-
->>>>>>> c507e4434e419c157ff516619aca9a000f2b10e0
 /*DESIGN*/
 
 .form__design {
     background-color: $background_landing;
     color: $title_color;
     font-family: $font_family;
-    padding: 10px 0 15px 10px;
+    padding: 10px 0 15px 0;
     border-bottom: 1px solid $title_color;
 
-    @media (min-width: 768px) {
-        width: 100vw;            
+    &--title{
+        padding-left: 10px;
+
     }
 
     
@@ -77,12 +89,14 @@
 .options__title {
     font-size: 1.2rem;
     align-self: start;
+    color: $text_color;
     }
 
 .options {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    color: $text_color;
     gap: 5px;
     & label {
         font-size: 1.2rem;
@@ -98,14 +112,10 @@
     display: flex;
     align-items: baseline;
     flex-direction: column;
-    padding: 10px 0 10px 5px;
-    border-bottom: 1px solid $title_color;
-
-        @media (min-width: 768px) {
-            width: 100vw;            
-        }
+    padding: 10px 0 10px 0;
 
     &--title {
+        padding-left: 10px;
 
         & h2 {
             font-weight: bold;
