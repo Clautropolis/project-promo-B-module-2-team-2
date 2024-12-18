@@ -1,3 +1,6 @@
 'use strict';
 
-console.log('>> Ready :)');
+import './0_form.js';
+import './1_preview.js';
+
+

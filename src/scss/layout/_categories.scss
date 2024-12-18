@@ -1,8 +1,5 @@
 .category {
-    background-color: rosybrown;
-    background-image: url(/images/cine.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: grey;
     width: 300px;
     height: 200px;
     padding: 20px;
@@ -25,99 +22,140 @@
             height: 300px;
         }
 
-    &__title {
-        font-size: 2rem;
-        font-weight: bold;
-        text-decoration: dotted underline;
-        background-color: $background_landing;
-        grid-column: 1/4;
-        grid-row: 1/2;
-        align-self: center;
+        & .title {
+            font-size: 2rem;
+            font-weight: bold;     
+            text-decoration: dotted underline;
+            grid-column: 3/6;
+            grid-row: 1/2;
+            align-self: center;
+            justify-self: flex-end;
+        }
         
+        & .image {
+            width: 70px;
+            grid-column: 5/6;
+            grid-row: 1/2;
+        }
+    
+        & .date {
+            font-size: 1.4rem;
+            grid-column: 4/6;
+            grid-row: 2/4;
+            align-self: center;
+            font-weight: bold;
+            justify-self: flex-end;
+        }
+    
+        & .price {
+            font-size: 2rem;
+            grid-column: 3/4;
+            grid-row: 2/4;
+            align-self: center;
+            justify-self: flex-end;
+            font-weight: bold;
+        }
+    
+        & .location {
+            font-size: 1.4rem;
+            font-weight: bold;
+            display: inline-block;
+            grid-column: 2/3;
+            grid-row: 2/4;
+            align-self: center;
+            justify-self: flex-start;
+            
+            & i {
+                color: black;
+                display: inline;
+                margin-right: 3px;
+            }
+
+            & p {
+                display: inline;
+            }
+        }
+    
+        & .web {
+            font-size: 0.8rem;
+            grid-column: 2/4;
+            grid-row: 4/5;
+            align-self: end;
+            justify-self: center;
+        }
+    
+        & .sponsor {
+            font-size: 0.8rem;
+            grid-column: 4/6;
+            grid-row: 4/5;
+            align-self: end;
+            justify-self: flex-end;
+        }
+    
+        & .qr {
+            width: 50px;
+            grid-column: 5/6;
+            grid-row: 4/5;
+            justify-self: end;
+        }
+}
+
+
+.category__cinema {
+    background-image: url(/images/fondo-telon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $background_landing;
+
+    & .title {     
+        text-decoration: dashed underline;
+        grid-column: 2/5;
+        justify-self: center;
     }
     
-    &__image {
-        width: 70px;
-        grid-column: 5/6;
-        grid-row: 1/2;
+    & .image {
     }
 
-    &__date {
-        font-size: 1.4rem;
-        grid-column: 3/5;
-        grid-row: 2/4;
-        align-self: center;
-        font-weight: bold;
-    }
-
-    &__price {
-        font-size: 2rem;
-        grid-column: 4/5;
-        grid-row: 1/2;
-        align-self: center;
-        justify-self: center;
-        font-weight: bold;
-    }
-
-    &__location {
-        font-size: 1.4rem;
-        font-weight: bold;
-        display: inline-block;
-        grid-column: 1/3;
-        grid-row: 2/4;
-        align-self: center;
-        justify-self: center;
-        background-color: $background_landing;
-        & i {
-            color: black;
-            display: inline;
-            margin-right: 3px;
-        }
-        & p {display: inline;}
-    }
-
-    &__web {
-        font-size: 0.8rem;
-        grid-column: 1/3;
-        grid-row: 4/5;
-        align-self: end;
-        color: $background_landing;
-    }
-
-    &__sponsor {
-        font-size: 0.8rem;
-        grid-column: 3/5;
-        grid-row: 4/5;
-        align-self: end;
-        color: $background_landing;
+    & .date {
         
     }
 
-    &__qr {
-        width: 50px;
-        grid-column: 5/6;
-        grid-row: 4/5;
-        justify-self: end;
+    & .price {
+        
+    }
+
+    & .location {
+        
+        & i {
+            
+        }
+        & p {
+
+        }
+    }
+
+    & .web {
+        grid-column: 1/3;
+
+    }
+
+    & .sponsor {
+
+    }
+
+    & .qr {
+
     }
 }
 
 
 .category__music {
-    background-color: rosybrown;
     background-image: url(/images/musica.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 700px;
-    height: 400px;
-    margin: 40px;
-    padding: 20px;
-    font-family: $font_family;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     color: white;
 
-    &__title {
+    & .title {
         font-size: 2.5rem;
         font-weight: bold;
         border: 1px solid white;
@@ -125,17 +163,16 @@
         grid-row: 1/2;
         align-self: center;
         justify-self: center;
-        
     }
     
-    &__image {
+    & .image {
         width: 50px;
         grid-column: 5/6;
         grid-row: 1/2;
         justify-self: end;
     }
 
-    &__date {
+    & .date {
         font-size: 1.5rem;
         grid-column: 2/4;
         grid-row: 2/4;
@@ -144,7 +181,7 @@
         color: $text_color;
     }
 
-    &__price {
+    & .price {
         font-size: 2rem;
         grid-column: 1/2;
         grid-row: 2/4;
@@ -153,7 +190,7 @@
         font-weight: bold;
     }
 
-    &__location {
+    & .location {
         font-size: 1.4rem;
         font-weight: bold;
         display: inline-block;
@@ -170,7 +207,7 @@
         & p {display: inline;}
     }
 
-    &__web {
+    & .web {
         font-size: 0.8rem;
         grid-column: 1/3;
         grid-row: 4/5;
@@ -178,16 +215,15 @@
         color: $background_landing;
     }
 
-    &__sponsor {
+    & .sponsor {
         font-size: 0.8rem;
         grid-column: 3/5;
         grid-row: 4/5;
         align-self: end;
         color: $background_landing;
-        
     }
 
-    &__qr {
+    & .qr {
         width: 50px;
         grid-column: 5/6;
         grid-row: 4/5;
@@ -195,22 +231,13 @@
     }
 }
 
-.category__gastronimia{
-    background-color: rosybrown;
+/*.category__gastronomy {
     background-image: url(/images/gastronomia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 700px;
-    height: 400px;
-    margin: 40px;
-    padding: 20px;
-    font-family: $font_family;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     color: white;
 
-    &__title {
+    & .title {
         font-size: 2.6rem;
         font-weight: bold;
         border: 1px solid white;
@@ -219,17 +246,16 @@
         align-self: end;
         justify-self: center;
         color: $text_color;
-        
     }
     
-    &__image {
+    & .image {
         width: 50px;
         grid-column: 3/4;
         grid-row: 4/5;
         justify-self: start;
     }
 
-    &__date {
+    & .date {
         font-size: 1.5rem;
         grid-column: 2/4;
         grid-row: 2/4;
@@ -238,7 +264,7 @@
         color: $text_color;
     }
 
-    &__price {
+    & .price {
         font-size: 2rem;
         grid-column: 5/6;
         grid-row: 1/2;
@@ -248,7 +274,7 @@
         color: $text_color;
     }
 
-    &__location {
+    & .location {
         font-size: 1.4rem;
         font-weight: bold;
         display: inline-block;
@@ -266,7 +292,7 @@
         & p {display: inline;}
     }
 
-    &__web {
+    & .web {
         font-size: 0.8rem;
         grid-column: 4/6;
         grid-row: 4/5;
@@ -275,20 +301,19 @@
         color: $text_color
     }
 
-    &__sponsor {
+    & .sponsor {
         font-size: 0.8rem;
         grid-column: 4/6;
         grid-row: 4/5;
         align-self: end;
         justify-self: end;
         color: $text_color;
-        
     }
 
-    &__qr {
+    & .qr {
         width: 50px;
         grid-column: 2/3;
         grid-row: 4/5;
         justify-self: start;
     }
-}
+}*/
