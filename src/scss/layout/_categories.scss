@@ -212,7 +212,7 @@
 
     & .price {
         grid-column: 2/4;
-        grid-row: 2/3;
+        grid-row: 3/4;
         align-self: center;
         justify-self: center;
         color: $text_color;
@@ -223,7 +223,7 @@
         grid-column: 3/6;
         grid-row: 3/4;
         align-self: center;
-        justify-self: center;
+        justify-self: flex-end;
         color: $text_color;
 
         & i {
