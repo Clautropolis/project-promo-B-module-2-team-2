@@ -111,38 +111,6 @@
     & .title {     
         text-decoration: dashed underline;
     }
-    
-    & .image {
-    }
-
-    & .date {
-    }
-
-    & .price {
-        
-    }
-
-    & .location {
-        
-        & i {
-            
-        }
-        & p {
-
-        }
-    }
-
-    & .web {
-
-    }
-
-    & .sponsor {
-
-    }
-
-    & .qr {
-
-    }
 }
 
 
@@ -156,33 +124,16 @@
         border: 1px solid white;
         text-decoration: none;
     }
-    
-    & .image {
-    }
 
     & .date {
         color: $text_color;
     }
 
-    & .price {
-    }
-
     & .location {
-        & i {
-        }
 
         & p {
             display: inline;
         }
-    }
-
-    & .web {
-    }
-
-    & .sponsor {
-    }
-
-    & .qr {
     }
 }
 
@@ -199,9 +150,6 @@
         grid-column: 3/6;
     }
     
-    & .image {
-    }
-
     & .date {
         grid-column: 4/6;
         grid-row: 2/3;
@@ -226,8 +174,6 @@
         justify-self: flex-end;
         color: $text_color;
 
-        & i {
-        }
         & p {
             display: inline;
         }
@@ -245,8 +191,5 @@
         align-self: end;
         justify-self: end;
         color: $text_color;
-    }
-
-    & .qr {
     }
 }
