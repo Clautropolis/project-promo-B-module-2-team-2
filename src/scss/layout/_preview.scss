@@ -16,13 +16,17 @@
     margin-left: 0;
     
     &--button {
-        color: $background_foot-head;
+        @include form_animation();
+        background-color: $background_foot-head;
+        color: white;
         display: flex;
         align-items: center;
         gap: 5px;
-        border-radius: 20px;
+        border-radius: 15px;
         padding: 9px 10px;
-        border: 2px solid $background_foot-head;
+        border-style: none;
+        //border: 2px solid $background_foot-head;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         @media screen and (min-width: 768px) {
             margin-top: 10px;
         }
