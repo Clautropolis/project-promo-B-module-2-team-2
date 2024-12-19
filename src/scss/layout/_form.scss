@@ -40,15 +40,19 @@
     }
 }
 
+.answers{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 5px;
+}
 .inputs {
     width: 250px;
     border: 1px solid $icons_color;
 }
 
 .labels {
-    align-self: center;
     color: $text_color;
-    padding-left: 20px;
 }
 
 /*DESIGN*/
