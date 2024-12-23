@@ -70,3 +70,30 @@ radio1.addEventListener('input', handleInputRadio1);
 radio2.addEventListener('input', handleInputRadio2);
 radio3.addEventListener('input', handleInputRadio3);
 
+const titleDesign = document.querySelector('.js-titleDesign');
+const design = document.querySelector('.js-design');
+const titleFillin = document.querySelector('.js-titleFillin');
+const fillin = document.querySelector('.js-fillin');
+const titleShare = document.querySelector('.js-titleShare');
+const share1 = document.querySelector('.js-share1');
+const share2 = document.querySelector('.js-share2');
+
+function collapsedDesign() {
+    design.classList.toggle('hidden');
+
+}
+
+function collapsedFillin() {
+    fillin.classList.toggle('hidden');
+}
+
+function collapsedShare() {
+    share1.classList.toggle('hidden');
+    share2.classList.toggle('hidden');
+}
+
+
+
+titleDesign.addEventListener('click', collapsedDesign);
+titleFillin.addEventListener('click', collapsedFillin);
+titleShare.addEventListener('click', collapsedShare);
