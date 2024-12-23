@@ -1,3 +1,5 @@
+'use strict';
+
 const data = {
     field1: 0, //titulo
     field2: '', //Ubicación
