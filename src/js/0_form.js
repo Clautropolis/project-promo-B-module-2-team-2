@@ -1,14 +1,14 @@
 'use strict';
 
 const data = {
-    field1: 0, //titulo
+    field1: '', //titulo
     field2: '', //Ubicación
     field3: '', //Fechas
     field4: '', //Precio
     field5: '', //Web
     field6: '', //sponsor
-    field7: '',
-    photo: '',
+    field7: '', //qr
+    photo: '', //image
 
 };
 
@@ -19,6 +19,8 @@ const price = document.querySelector('.js-preview-price');
 const place = document.querySelector('.js-preview-location');
 const web = document.querySelector('.js-preview-web');
 const sponsor = document.querySelector('.js-preview-sponsor');
+
+
 
 
 function render () {

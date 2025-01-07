@@ -1,11 +1,12 @@
 .main__tickets {
     background-color: $background_landing;
+    min-height: 90vh;
     
     @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
         
-
     }
+
 }

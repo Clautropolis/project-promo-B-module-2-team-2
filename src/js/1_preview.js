@@ -10,6 +10,8 @@ function resetValues() {
     place.innerHTML = '';
     web.innerHTML = '';
     sponsor.innerHTML = '';
+    profileImage.setAttribute("src", "");
+    profileQr.setAttribute("src", "");
 };
 
 function resetForm() {
