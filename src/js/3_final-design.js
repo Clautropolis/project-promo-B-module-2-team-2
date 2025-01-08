@@ -15,7 +15,7 @@ const urlQr = new URL ("https://upload.wikimedia.org/wikipedia/commons/d/d7/Comm
 
 const dataCard = {
     field1: 'Festival del Humor', //titulo
-    field2: 'Cercedilla', //Ubicación
+    field2: 'Villanueva de la Calzada', //Ubicación
     field3: '23 y 24 de Marzo', //Fechas
     field4: '30€', //Precio
     field5: 'www.adalab.com', //Web

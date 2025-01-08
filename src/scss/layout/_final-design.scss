@@ -1,0 +1,18 @@
+.card{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:$background_landing;
+    font-family: $font_family;
+    padding: 30px;
+    
+    &__div{    
+        box-shadow: 0px 10px 10px rgba(20, 8, 14, 0.5);
+
+    }
+
+    
+
+}
