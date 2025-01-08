@@ -37,6 +37,16 @@
             width: 50px;
             grid-column: 5/6;
             grid-row: 1/2;
+            transform: translate(15px, -10px);
+            @media (min-width: 580px){
+                width: 60px;
+            }
+            @media (min-width: 970px){
+                width: 85px;
+                transform: translateX(30px);
+
+
+            }
         }
     
         & .date {
@@ -99,7 +109,13 @@
             grid-column: 5/6;
             grid-row: 4/5;
             justify-self: end;
-            transform: translateY(-5px)
+            transform: translateY(-10px);
+            
+            @media (min-width: 970px){
+                width: 50px;
+                transform: translateY(-15px);
+            }
+            
         }
 }
 

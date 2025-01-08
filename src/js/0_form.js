@@ -27,7 +27,7 @@ function render () {
     
     title.innerHTML = data.field1;
     date.innerHTML = data.field3;
-    price.innerHTML = data.field4;
+    price.innerHTML = data.field4 + "€";
     place.innerHTML = data.field2;
     web.innerHTML = data.field5;
     sponsor.innerHTML = data.field6;
