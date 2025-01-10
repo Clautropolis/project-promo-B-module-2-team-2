@@ -190,6 +190,15 @@
     }
 }
 
+.error-message {
+    color: rgb(146, 5, 5);
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: $font_family;
+    padding: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
 .social-media {
     margin-top: 10px;
 }

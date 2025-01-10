@@ -51,8 +51,8 @@
         <fieldset class="form__fillin--input js-form hidden js-fillin">
             
             <div class="answers">
-                <label for="field1" class="labels">Nombre del evento</label>
-                <input type="text" id="field1" class="inputs js-inputs"/>
+                <label for="field4" class="labels">Nombre del evento</label>
+                <input type="text" id="field4" class="inputs js-inputs"/>
             </div>
                         
             <div class="answers">
@@ -71,8 +71,8 @@
             </div>
             
             <div class="answers">
-                <label for="field4" class="labels">Precio</label>
-                <input type="number" id="field4" class="inputs js-inputs js-price" />
+                <label for="field1" class="labels">Precio</label>
+                <input type="number" id="field1" class="inputs js-inputs js-price" />
             </div>
             
             <div class="answers">
@@ -100,14 +100,16 @@
             <h2 class="js-titleShare">COMPARTE</h2>
         </div>
 
-        <a href="./final_design.html" class="form__share--button hidden js-share1" target="_blank">
+        <button  class="form__share--button hidden js-share1" target="_blank">
             <i class="fa-solid fa-ticket"></i>
-            CREAR ENTRADA</a>
+            CREAR ENTRADA</button>
+
+        <p class="hidden error-message js-error-message">Ha ocurrido un error. Revisa que todos los datos de tu formulario sean correctos.</p>
 
         <div class="form__share--link hidden js-share2">
-            <h5>La entrada ha sido creada:</h5>
-            <p>url de la entrada que no se muy bien como se hace.</p>
-            <div class="social-media">
+            <h5 class="hidden js-created-message">La entrada ha sido creada:</h5>
+            <a href="./final_design.html" class="hidden js-link-final-design" target="_blank">Pincha aquí para ver tu entrada</a>
+            <div class="social-media hidden">
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-tiktok"></i></a>

@@ -1,10 +1,10 @@
 'use strict';
 
 const data = {
-    field1: '', //titulo
+    field1: 0, //Precio
     field2: '', //Ubicación
     field3: '', //Fechas
-    field4: '', //Precio
+    field4: '', //Titulo
     field5: '', //Web
     field6: '', //sponsor
     field7: '', //qr
@@ -22,12 +22,11 @@ const sponsor = document.querySelector('.js-preview-sponsor');
 
 
 
-
 function render () {
     
-    title.innerHTML = data.field1;
+    title.innerHTML = data.field4;
     date.innerHTML = data.field3;
-    price.innerHTML = data.field4 + "€";
+    price.innerHTML = data.field1 + "€";
     place.innerHTML = data.field2;
     web.innerHTML = data.field5;
     sponsor.innerHTML = data.field6;
