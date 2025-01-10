@@ -1,5 +1,15 @@
 'use strict';
 
+const form = document.querySelector('.js-form');
+const title = document.querySelector('.js-preview-title');
+const date = document.querySelector('.js-preview-date');
+const price = document.querySelector('.js-preview-price');
+const place = document.querySelector('.js-preview-location');
+const web = document.querySelector('.js-preview-web');
+const sponsor = document.querySelector('.js-preview-sponsor');
+const profileImage = document.querySelector('.js-image-preview');
+const profileQr = document.querySelector('.js-qr-preview');
+
 let dataCard = {};
 
 const idLS = localStorage.getItem('idTicket');
@@ -7,7 +17,11 @@ fetch(`https://dev.adalab.es/api/info/${idLS}`)
     .then((response) => response.json())
     .then((info) => {
         dataCard = info.data;
+        console.log(info);
+        console.log(dataCard);
         renderCard();
+        console.log(info);
+        console.log(dataCard);
     });
 
 
