@@ -8,6 +8,7 @@ const data = {
     field5: '', //Web
     field6: '', //sponsor
     field7: '', //qr
+    field8: '', //clase
     photo: '', //image
 
 };

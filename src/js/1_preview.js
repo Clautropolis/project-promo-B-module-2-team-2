@@ -31,12 +31,18 @@ function resetCategories() {
     radio3.checked = false;
 }
 
+function resetShare() {
+    errorMessage.classList.add('hidden');
+    share2.classList.add('hidden');
+}
+
 function handleClick(event) {
     event.preventDefault();
     resetValues();
     resetForm();
     resetImageClass();
     resetCategories();
+    resetShare();
 };
 
 resetButton.addEventListener('click', handleClick);

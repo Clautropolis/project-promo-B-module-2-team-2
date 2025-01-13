@@ -48,7 +48,7 @@ function writeImage() {
 
 function writeQr() {
     profileQr.src = frQr.result;
-    data.field7 = fr.result;
+    data.field7 = frQr.result;
 }
 
 
