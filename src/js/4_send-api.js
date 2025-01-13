@@ -1,6 +1,7 @@
 const errorMessage = document.querySelector('.js-error-message');
 const successMessage = document.querySelector('.js-created-message');
 const finalDesignLink = document.querySelector('.js-link-final-design');
+const socialMedia = document.querySelector('.js-social-media')
 
 function handleCreate(event){
     event.preventDefault();
@@ -17,6 +18,8 @@ function handleCreate(event){
             localStorage.setItem('idTicket', info.infoID);
             successMessage.classList.remove('hidden');
             finalDesignLink.classList.remove('hidden');
+            socialMedia.classList.remove('hidden');
+
         } else {
             errorMessage.classList.remove('hidden');
         }
