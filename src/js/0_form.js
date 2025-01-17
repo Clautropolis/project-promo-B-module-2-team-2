@@ -1,6 +1,6 @@
 'use strict';
 
-const data = {
+let data = {
     field1: 0, //Precio
     field2: '', //Ubicación
     field3: '', //Fechas
@@ -31,7 +31,6 @@ function render () {
     place.innerHTML = data.field2;
     web.innerHTML = data.field5;
     sponsor.innerHTML = data.field6;
-
 };
 
 
@@ -46,31 +45,28 @@ function handleForm (event) {
 
 form.addEventListener('input', handleForm);
 
-const radio1 = document.querySelector('.js-radio1');
-const radio2 = document.querySelector('.js-radio2');
-const radio3 = document.querySelector('.js-radio3');
+
 const preview = document.querySelector('.js-preview');
+const optionTheme = document.querySelector('.js-options');
 
-const handleInputRadio1 = () => {
-    preview.classList.add('category__gastronomy');
-    preview.classList.remove('category__music', 'category__cinema');
+function handleInputTheme() {
+    if (optionTheme.value === 'gastronomy') {
+        preview.classList.add('category__gastronomy');
+        preview.classList.remove('category__music', 'category__cinema');
+    } else if (optionTheme.value === 'music') {
+        preview.classList.add('category__music');
+        preview.classList.remove('category__cinema', 'category__gastronomy');
+    } else if (optionTheme.value === 'cinema') {
+        preview.classList.add('category__cinema');
+        preview.classList.remove('category__music', 'category__gastronomy');
+    }
+    data['field8'] = optionTheme.value;
 };
 
-const handleInputRadio2 = () => {
-    preview.classList.add('category__music');
-    preview.classList.remove('category__cinema', 'category__gastronomy');
-};
-
-const handleInputRadio3 = () => {
-    preview.classList.add('category__cinema');
-    preview.classList.remove('category__music', 'category__gastronomy');
-};
 
 
+optionTheme.addEventListener('input', handleInputTheme);
 
-radio1.addEventListener('input', handleInputRadio1);
-radio2.addEventListener('input', handleInputRadio2);
-radio3.addEventListener('input', handleInputRadio3);
 
 const titleDesign = document.querySelector('.js-titleDesign');
 const design = document.querySelector('.js-design');

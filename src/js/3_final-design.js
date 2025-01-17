@@ -9,7 +9,7 @@ const web = document.querySelector('.js-preview-web');
 const sponsor = document.querySelector('.js-preview-sponsor');
 const profileImage = document.querySelector('.js-image-preview');
 const profileQr = document.querySelector('.js-qr-preview');
-
+const preview = document.querySelector('.js-preview');
 
 
 let dataCard = {};
@@ -24,6 +24,15 @@ fetch(`https://dev.adalab.es/api/info/${idLS}`)
         renderCard();
     });
 
+function selectTheme() {
+    if (dataCard.field8 === 'gastronomy') {
+        preview.classList.add('category__gastronomy');
+    } else if (dataCard.field8 === 'music') {
+        preview.classList.add('category__music');
+    } else if (dataCard.field8 === 'cinema') {
+        preview.classList.add('category__cinema');
+    }
+};
 
 function renderCard(){
     title.innerHTML = dataCard.field4;
@@ -34,7 +43,7 @@ function renderCard(){
     sponsor.innerHTML = dataCard.field6;
     profileImage.src = dataCard.photo;
     profileQr.src = dataCard.field7;
-
+    selectTheme();
 }
 
 

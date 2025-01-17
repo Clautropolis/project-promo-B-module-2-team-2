@@ -9,34 +9,13 @@
                 
             <h4 class="options__title">Elige una categoría</h4>
 
-            <div class="options js-options">
-                <label for="categoria1">
-                <input
-                    id="categoria1"
-                    type="radio"
-                    value="Gastronomía"
-                    name="categorias"
-                    class="js-radio1"/>
-                Gastronomía</label>
-            
-                <label for="categoria2">
-                <input
-                    id="categoria2"
-                    type="radio"
-                    value="Musica"
-                    name="categorias"
-                    class="js-radio2"/>
-                Música</label>
+            <select name="options" id="field8" class="options js-options">
+                <option value="">Seleccione categoría</option>
+                <option value="gastronomy">Gastronomía</option>
+                <option value="music">Música</option>
+                <option value="cinema">Cine</option>
+            </select>
 
-                <label for="categoria3">
-                <input
-                    id="categoria3"
-                    type="radio"
-                    value="Cine"
-                    name="categorias"
-                    class="js-radio3"/>
-                Cine</label>
-            </div>
         </fieldset>
 
     </section>
@@ -89,6 +68,7 @@
                 <label for="field6" class="labels">Nombres de los patrocinadores</label>
                 <input type="text" id="field6" class="inputs js-inputs" />
             </div>
+            <span>*Debes rellenar todos los campos y las imágenes deben pesar menos de 28KB.</span>
         </fieldset>
         
 

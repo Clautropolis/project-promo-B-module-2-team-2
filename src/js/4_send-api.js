@@ -19,9 +19,12 @@ function handleCreate(event){
             successMessage.classList.remove('hidden');
             finalDesignLink.classList.remove('hidden');
             socialMedia.classList.remove('hidden');
+            console.log('holaaa');
 
         } else {
+            console.log('holaaa error')
             errorMessage.classList.remove('hidden');
+            
         }
     })
 

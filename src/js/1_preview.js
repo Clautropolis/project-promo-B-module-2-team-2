@@ -26,14 +26,26 @@ function resetImageClass() {
 };
 
 function resetCategories() {
-    radio1.checked = false;
-    radio2.checked = false;
-    radio3.checked = false;
+    optionTheme.value = '';
 }
 
 function resetShare() {
     errorMessage.classList.add('hidden');
     share2.classList.add('hidden');
+}
+
+function resetData() {
+    data = {
+        field1: 0, //Precio
+        field2: '', //Ubicación
+        field3: '', //Fechas
+        field4: '', //Titulo
+        field5: '', //Web
+        field6: '', //sponsor
+        field7: '', //qr
+        field8: '', //clase
+        photo: '', //image
+    }
 }
 
 function handleClick(event) {
@@ -43,6 +55,8 @@ function handleClick(event) {
     resetImageClass();
     resetCategories();
     resetShare();
+    resetData();
+    localStorage.removeItem('idTicket');
 };
 
 resetButton.addEventListener('click', handleClick);
