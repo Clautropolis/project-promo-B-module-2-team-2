@@ -32,6 +32,7 @@ function resetCategories() {
 function resetShare() {
     errorMessage.classList.add('hidden');
     share2.classList.add('hidden');
+    share1.classList.add('hidden');
 }
 
 function resetData() {
