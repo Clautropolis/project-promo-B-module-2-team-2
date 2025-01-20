@@ -5,13 +5,13 @@ Este proyecto es una aplicación web creada para ayudar a los organizadores de e
 ## Características
 
 - **Landing Page**: Página de bienvenida donde los usuarios pueden empezar a crear su entrada. Con el botón "Crear entrada", se accede a la siguiente página en la que se pueden rellenar los datos.
-![Es una captura de pantalla del landing de la web](landing-captura.png)
+![Es una captura de pantalla del landing de la web](./public/images/landing-captura.png)
 - **Elige una categoría**: La aplicación permite elegir entre tres categorías (gastronomía, cine y música). Dependiendo de la selección, el fondo de la entrada cambia para reflejar la categoría elegida.
 - **Rellena el formulario**: En esta sección, puedes rellenar diferentes campos que se verán reflejados en la entrada. Los campos incluyen nombre del evento, precio, ubicación, fechas, etc.
-![Es una captura de pantalla del formulario de la web](formulario-captura.png)
+![Es una captura de pantalla del formulario de la web](./public/images/formulario-captura.png)
 - **Vista Previa en Tiempo Real**: Mientras rellenas el formulario, puedes ver los cambios reflejados en tiempo real tanto en los campos como en el fondo y tipografía de la entrada según la categoría seleccionada.
 - **Opción para Compartir**: Una vez completado el formulario, puedes compartir la entrada. Si todos los campos están correctamente rellenados, se abrirá un link con la entrada en una nueva ventana a pantalla completa. Si algún campo está vacío, aparecerá un mensaje de error y se te pedirá que completes todos los campos.
-![Es una captura de pantalla del apartado de comparte de la web](comparte-captura.png)
+![Es una captura de pantalla del apartado de comparte de la web](./public/images/comparte-captura.png)
 - **Botón de Reset**: Hemos añadido un botón de reset que limpia por completo todos los campos del formulario y la tarjeta de previsualización, permitiéndote empezar de nuevo con el formulario.
 
 ## Tecnologías Usadas
