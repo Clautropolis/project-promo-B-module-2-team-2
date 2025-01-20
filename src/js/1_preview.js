@@ -33,6 +33,9 @@ function resetShare() {
     errorMessage.classList.add('hidden');
     share2.classList.add('hidden');
     share1.classList.add('hidden');
+    socialMedia.classList.add('hidden');
+    successMessage.classList.add('hidden');
+    finalDesignLink.classList.add('hidden');
 }
 
 function resetData() {
