@@ -19,9 +19,13 @@ function handleCreate(event){
             successMessage.classList.remove('hidden');
             finalDesignLink.classList.remove('hidden');
             socialMedia.classList.remove('hidden');
+            errorMessage.classList.add('hidden');
 
         } else {
             errorMessage.classList.remove('hidden');
+            successMessage.classList.add('hidden');
+            finalDesignLink.classList.add('hidden');
+            socialMedia.classList.add('hidden');
         }
     })
 
